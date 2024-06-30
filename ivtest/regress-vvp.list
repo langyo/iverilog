@@ -49,6 +49,7 @@ br_gh1099a			vvp_tests/br_gh1099a.json
 br_gh1099b			vvp_tests/br_gh1099b.json
 br_gh1099c			vvp_tests/br_gh1099c.json
 br_gh1104			vvp_tests/br_gh1104.json
+br_gh1122			vvp_tests/br_gh1122.json
 ca_time_real`			vvp_tests/ca_time_real.json
 case1				vvp_tests/case1.json
 case2				vvp_tests/case2.json
@@ -67,6 +68,9 @@ constfunc17			vvp_tests/constfunc17.json
 constfunc18			vvp_tests/constfunc18.json
 constfunc19			vvp_tests/constfunc19.json
 constfunc20			vvp_tests/constfunc20.json
+constfunccall1			vvp_tests/constfunccall1.json
+constfunccall2			vvp_tests/constfunccall2.json
+constfunccall3			vvp_tests/constfunccall3.json
 decl_before_use1		vvp_tests/decl_before_use1.json
 decl_before_use2		vvp_tests/decl_before_use2.json
 decl_before_use3		vvp_tests/decl_before_use3.json

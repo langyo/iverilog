@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2003-2018 Stephen Williams (steve@icarus.com)
+ * Copyright (c) 2003-2024 Stephen Williams (steve@icarus.com)
  *
  *    This source code is free software; you can redistribute it
  *    and/or modify it in source code form under the terms of the GNU
@@ -41,7 +41,7 @@
 # include  "ivl_alloc.h"
 
 __vpiScope*stop_current_scope = 0;
-bool stop_is_finish;  /* When set, $stop acts like $finish (set in main.cc). */
+bool stop_is_finish = false;  /* When set, $stop acts like $finish (set in main.cc). */
 int  stop_is_finish_exit_code = 0;
 
 #ifndef USE_READLINE
@@ -441,6 +441,8 @@ static struct {
         "Synonym for push."},
       { "cont",   &cmd_cont,
         "Resume (continue) the simulation"},
+      { "exit", &cmd_finish,
+        "Synonym for finish."},
       { "finish", &cmd_finish,
         "Finish the simulation."},
       { "help",   &cmd_help,
