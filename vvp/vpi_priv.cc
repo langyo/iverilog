@@ -1818,7 +1818,9 @@ vpiHandle vpi_handle_multi(PLI_INT32 type,
 			      prev = vvp_net_ptr_t(nullptr, 0);
 			} else {
 			      prev = previous_node;
-			      cur = prev.ptr()->port[prev.port()];
+			      if (prev.ptr()) {
+				    cur = prev.ptr()->port[prev.port()];
+			      }
 			}
 		  }
 
